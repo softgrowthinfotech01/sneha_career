@@ -12,13 +12,8 @@ $path=end($path);
         <div class="row">
             <div class="col-12">
                 <nav class="main-nav">
-                    <!-- ***** Logo Start ***** -->
-                    <a href="home.php" class="logo">
-                        
-                        
-                        <h2 class="text-white text-normal"><img src="assets/images/sneha-logo-2.png" style="width:50px;" alt="image-logo" class=" d-inline">Sneha career</h2>
-                    </a>
-                    <!-- ***** Logo End ***** -->
+                   
+                   
                     <!-- ***** Serach Start ***** -->
                     <div class="search-input w-75">
                       <!-- <form id="search" action="#">

@@ -1,8 +1,6 @@
-<?php
-require_once "admin/conn.php";
-
+<?php  
+require_once "conn.php";
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -134,7 +132,7 @@ font-family: 'unna'; /* Use the new font family, with a fallback if not supporte
 <body>
 
   <!-- ***** Preloader Start ***** -->
-  <div id="js-preloader" class="js-preloader">
+  <!-- <div id="js-preloader" class="js-preloader">
     <div class="preloader-inner">
       <span class="dot"></span>
       <div class="dots">
@@ -143,10 +141,10 @@ font-family: 'unna'; /* Use the new font family, with a fallback if not supporte
         <span></span>
       </div>
     </div>
-  </div>
+  </div> -->
   <!-- ***** Preloader End ***** -->
 
-  <?php require_once 'header.php' ?>
+  <?php require_once 'header.php'; ?>
 
   <div class="main-banner pb-0" style="border-radius:0 0 200px 0;" id="top">
     <div class="container-fluid ">
@@ -305,25 +303,50 @@ font-family: 'unna'; /* Use the new font family, with a fallback if not supporte
               <h5 class="mb-1 fw-semibold"><span> <?php echo $row_job[$i]['job_title'];?></span></h5>
               <div class="mb-1 ">
                 <span class="h6  text-secondary text-small me-2">Work Type : <small
-                    class="p-0 px-1  alert rounded-3 alert-primary me-2"><i class="fa-solid fa-house fa-xs"></i> Work
-                    From Home</small>
+                    class="p-0 px-1  alert rounded-3 alert-primary me-2"><i class="fa-solid fa-house fa-xs"></i> 
+                      <?php 
+                            if($row_job[$i]['work_type']=='1')
+                            {
+                                echo "Full Time";
+                            }
+                            elseif($row_job[$i]['work_type']=='2')
+                            {
+                                echo "Part Time";
+                            }
+                            elseif($row_job[$i]['work_type']=='3')
+                            {
+                                echo "Work From Home";
+                            }
+                            ?>
+                            </small>
                 </span><span class="h6  text-secondary text-small me-2">Status : <small
-                    class="p-0 px-1  alert rounded-3 alert-primary me-2">Available</small></span>
+                    class="p-0 px-1  alert rounded-3 alert-primary me-2">
+                    <?php 
+                            if($row_job[$i]['job_status']=='1')
+                            {
+                                echo "Available";
+                            }
+                            else
+                            {
+                                echo "Closed";
+                            }
+                            ?>
+                            </small></span>
               </div>
             </div>
             <hr class="m-1">
             <div class="down-content pt-2 lh-md">
-              <div class="author overflow-hidden" style="height:50px;"><u>Basic Requirement</u> : <span>18+ Age, Computer knowledge, Laptop with Good
-                  Internet
-                  Connectivity & Good Communication... Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, ipsa!</span></div>
-              <div class="author mb-3"><u>Salary</u> : <span>Earnings from 14k to 17k</span></div>
+              <div class="author overflow-hidden" style="height:50px;"><u>Basic Requirement</u> : <span><?php echo $row_job[$i]['job_description'];?></span></div>
+              <div class="author mb-3"><u>Salary</u> : <span><?php echo $row_job[$i]['salary'];?></span></div>
               <small class="my-3" id="btnOpenForm"><a href="" style="background:var(--main2);"
                   class="text-light rounded-4 py-1 px-3"><i class="fa-solid fa-circle-info fa-xs"></i> Task Details</a>
               </small>
             </div>
           </div>
         </div>
-        <?php } ?>
+        <?php 
+        }
+         ?>
         <!--  -->
         <div class="form-popup-bg">
           <div class="form-container">
@@ -370,81 +393,7 @@ font-family: 'unna'; /* Use the new font family, with a fallback if not supporte
 
 
         <!--  -->
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6  development">
-          <div class="events_item">
-            <div class="thumb">
-              <a href="#"><img src="assets/images/course-02.jpg" alt=""></a>
-              <span class="category">Development</span>
-              <span class="price">
-                <h6><em>$</em>340</h6>
-              </span>
-            </div>
-            <div class="down-content">
-              <span class="author">Cindy Walker</span>
-              <h4>Web Development Tips</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design wordpress">
-          <div class="events_item">
-            <div class="thumb">
-              <a href="#"><img src="assets/images/course-03.jpg" alt=""></a>
-              <span class="category">Wordpress</span>
-              <span class="price">
-                <h6><em>$</em>640</h6>
-              </span>
-            </div>
-            <div class="down-content">
-              <span class="author">David Hutson</span>
-              <h4>Latest Web Trends</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 development">
-          <div class="events_item">
-            <div class="thumb">
-              <a href="#"><img src="assets/images/course-04.jpg" alt=""></a>
-              <span class="category">Development</span>
-              <span class="price">
-                <h6><em>$</em>450</h6>
-              </span>
-            </div>
-            <div class="down-content">
-              <span class="author">Stella Blair</span>
-              <h4>Online Learning Steps</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 wordpress development">
-          <div class="events_item">
-            <div class="thumb">
-              <a href="#"><img src="assets/images/course-05.jpg" alt=""></a>
-              <span class="category">Wordpress</span>
-              <span class="price">
-                <h6><em>$</em>320</h6>
-              </span>
-            </div>
-            <div class="down-content">
-              <span class="author">Sophia Rose</span>
-              <h4>Be a WordPress Master</h4>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 wordpress design">
-          <div class="events_item">
-            <div class="thumb">
-              <a href="#"><img src="assets/images/course-06.jpg" alt=""></a>
-              <span class="category">Webdesign</span>
-              <span class="price">
-                <h6><em>$</em>240</h6>
-              </span>
-            </div>
-            <div class="down-content">
-              <span class="author">David Hutson</span>
-              <h4>Full Stack Developer</h4>
-            </div>
-          </div>
-        </div>
+       
       </div>
     </div>
   </section>
@@ -536,7 +485,7 @@ font-family: 'unna'; /* Use the new font family, with a fallback if not supporte
     </div>
   </div>
 
-  <?php require_once 'footer.php' ?>
+  <?php require_once 'footer.php'; ?>
 
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
