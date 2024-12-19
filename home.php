@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
 
-    <title>Scholar - Online School HTML5 Template</title>
+  <title>Sneha Career </title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-scholar.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-<!--
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-scholar.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <!--
 
 TemplateMo 586 Scholar
 
 https://templatemo.com/tm-586-scholar
 
 -->
-  </head>
+</head>
 
 <body>
 
@@ -43,65 +44,35 @@ https://templatemo.com/tm-586-scholar
   </div>
   <!-- ***** Preloader End ***** -->
 
-<<<<<<<< HEAD:home2.php
-  <!-- ***** Header Area Start ***** -->
- <?php require_once 'header.php'; ?>
-  <!-- ***** Header Area End ***** -->
+  <?php require_once 'header.php' ?>
 
-========
-<?php require_once 'header.php' ?>
-  
->>>>>>>> cfbebc664611f00aa41ca11a4e018345b15deef3:index copy.php
-  <div class="main-banner" id="top">
-    <div class="container">
+  <div class="main-banner pb-0" style="border-radius:0 0 200px 0;" id="top">
+    <div class="container-fluid ">
       <div class="row">
         <div class="col-lg-12">
           <div class="owl-carousel owl-banner">
-            <div class="item item-1">
-              <div class="header-text">
-                <span class="category">Our Courses</span>
-                <h2>With Scholar Teachers, Everything Is Easier</h2>
-                <p>Scholar is free CSS template designed by TemplateMo for online educational related websites. This layout is based on the famous Bootstrap v5.3.0 framework.</p>
-                <div class="buttons">
-                  <div class="main-button">
-                    <a href="#">Request Demo</a>
-                  </div>
-                  <div class="icon-button">
-                    <a href="#"><i class="fa fa-play"></i> What's Scholar?</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item item-2">
-              <div class="header-text">
-                <span class="category">Best Result</span>
-                <h2>Get the best result out of your effort</h2>
-                <p>You are allowed to use this template for any educational or commercial purpose. You are not allowed to re-distribute the template ZIP file on any other website.</p>
-                <div class="buttons">
-                  <div class="main-button">
-                    <a href="#">Request Demo</a>
-                  </div>
-                  <div class="icon-button">
-                    <a href="#"><i class="fa fa-play"></i> What's the best result?</a>
+            <div class="item pt-2 m-0" style="border-radius:25px 25px 250px 25px;">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="header-text">
+                    <span class="category">Our Courses</span>
+                    <h2 class="w-100">With Scholar Teachers, Everything Is Easier</h2>
+                   
+                    <div class="buttons">
+                      <div class="main-button w-100 text-center mx-5">
+                        <a href="#" class="d-block"><i class="fa fa-search"></i> Search for Job Openings !!</a>
+                      </div>
+                      <!-- <div class="icon-button">
+                        <a href="#"><i class="fa fa-search"></i>Search for Job Openings !!</a>
+                      </div> -->
+                    </div>
                   </div>
                 </div>
+                <div class="col-md-6 item item-1 m-0"></div>
               </div>
             </div>
-            <div class="item item-3">
-              <div class="header-text">
-                <span class="category">Online Learning</span>
-                <h2>Online Learning helps you save the time</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporious incididunt ut labore et dolore magna aliqua suspendisse.</p>
-                <div class="buttons">
-                  <div class="main-button">
-                    <a href="#">Request Demo</a>
-                  </div>
-                  <div class="icon-button">
-                    <a href="#"><i class="fa fa-play"></i> What's Online Course?</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+
+
           </div>
         </div>
       </div>
@@ -164,49 +135,63 @@ https://templatemo.com/tm-586-scholar
           <div class="accordion" id="accordionExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
                   Where shall we begin?
                 </button>
               </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  Dolor <strong>almesit amet</strong>, consectetur adipiscing elit, sed doesn't eiusmod tempor incididunt ut labore consectetur <code>adipiscing</code> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+                  Dolor <strong>almesit amet</strong>, consectetur adipiscing elit, sed doesn't eiusmod tempor
+                  incididunt ut labore consectetur <code>adipiscing</code> elit, sed do eiusmod tempor incididunt ut
+                  labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                   How do we work together?
                 </button>
               </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  Dolor <strong>almesit amet</strong>, consectetur adipiscing elit, sed doesn't eiusmod tempor incididunt ut labore consectetur <code>adipiscing</code> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+                  Dolor <strong>almesit amet</strong>, consectetur adipiscing elit, sed doesn't eiusmod tempor
+                  incididunt ut labore consectetur <code>adipiscing</code> elit, sed do eiusmod tempor incididunt ut
+                  labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                   Why SCHOLAR is the best?
                 </button>
               </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  There are more than one hundred responsive HTML templates to choose from <strong>Template</strong>Mo website. You can browse by different tags or categories.
+                  There are more than one hundred responsive HTML templates to choose from <strong>Template</strong>Mo
+                  website. You can browse by different tags or categories.
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingFour">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                   Do we get the best support?
                 </button>
               </h2>
-              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  You can also search on Google with specific keywords such as <code>templatemo business templates, templatemo gallery templates, admin dashboard templatemo, 3-column templatemo, etc.</code>
+                  You can also search on Google with specific keywords such as
+                  <code>templatemo business templates, templatemo gallery templates, admin dashboard templatemo, 3-column templatemo, etc.</code>
                 </div>
               </div>
             </div>
@@ -216,7 +201,8 @@ https://templatemo.com/tm-586-scholar
           <div class="section-heading">
             <h6>About Us</h6>
             <h2>What make us the best academy online?</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravid risus commodo.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Quis ipsum suspendisse ultrices gravid risus commodo.</p>
             <div class="main-button">
               <a href="#">Discover More</a>
             </div>
@@ -226,7 +212,7 @@ https://templatemo.com/tm-586-scholar
     </div>
   </div>
 
-  <section class="section courses" id="courses" >
+  <section class="section courses" id="courses">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -253,26 +239,19 @@ https://templatemo.com/tm-586-scholar
       <div class="row event_box">
         <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
           <div class="events_item">
-<<<<<<<< HEAD:home2.php
-            <div class="thumb">
-              <a href="#"><img src="assets/images/course-01.jpg" alt=""></a>
-              <span class="category">Webdesign</span>
-              <span class="price"><h6><em>$</em>160</h6></span>
-            </div>
-            <div class="down-content">
-              <span class="author">Stella Blair</span>
-              <h4>Learn Web Design</h4>
-========
             <div class="thumb  ps-4 pt-3">
               <h4><b>Job-Title</b></h4>
-              <div><span class="text-secondary text-small">Work Type : <span class=" text-dark rounded bg-info px-1">Work From Home</span> </span><span class="text-secondary text-small">Status : <span class=" text-dark rounded bg-info px-1">Available</span></span></div>
-              
+              <div><span class="text-secondary text-small">Work Type : <span
+                    class=" text-dark rounded bg-info px-1">Work From Home</span> </span><span
+                  class="text-secondary text-small">Status : <span
+                    class=" text-dark rounded bg-info px-1">Available</span></span></div>
+
             </div>
             <div class="down-content pt-2">
-              <div class="author">Basic Requirement : <span>18+ Age, Computer knowledge, Laptop with Good Internet Connectivity & Good Communication...</span></div>
+              <div class="author">Basic Requirement : <span>18+ Age, Computer knowledge, Laptop with Good Internet
+                  Connectivity & Good Communication...</span></div>
               <div class="author">Salary : <span>Earnings from 14k to 17k</span></div>
               <h4 class="mt-3"><a href="" class="bg-warning rounded px-3">Task Details</a></h4>
->>>>>>>> cfbebc664611f00aa41ca11a4e018345b15deef3:index copy.php
             </div>
           </div>
         </div>
@@ -281,7 +260,9 @@ https://templatemo.com/tm-586-scholar
             <div class="thumb">
               <a href="#"><img src="assets/images/course-02.jpg" alt=""></a>
               <span class="category">Development</span>
-              <span class="price"><h6><em>$</em>340</h6></span>
+              <span class="price">
+                <h6><em>$</em>340</h6>
+              </span>
             </div>
             <div class="down-content">
               <span class="author">Cindy Walker</span>
@@ -294,7 +275,9 @@ https://templatemo.com/tm-586-scholar
             <div class="thumb">
               <a href="#"><img src="assets/images/course-03.jpg" alt=""></a>
               <span class="category">Wordpress</span>
-              <span class="price"><h6><em>$</em>640</h6></span>
+              <span class="price">
+                <h6><em>$</em>640</h6>
+              </span>
             </div>
             <div class="down-content">
               <span class="author">David Hutson</span>
@@ -307,7 +290,9 @@ https://templatemo.com/tm-586-scholar
             <div class="thumb">
               <a href="#"><img src="assets/images/course-04.jpg" alt=""></a>
               <span class="category">Development</span>
-              <span class="price"><h6><em>$</em>450</h6></span>
+              <span class="price">
+                <h6><em>$</em>450</h6>
+              </span>
             </div>
             <div class="down-content">
               <span class="author">Stella Blair</span>
@@ -320,7 +305,9 @@ https://templatemo.com/tm-586-scholar
             <div class="thumb">
               <a href="#"><img src="assets/images/course-05.jpg" alt=""></a>
               <span class="category">Wordpress</span>
-              <span class="price"><h6><em>$</em>320</h6></span>
+              <span class="price">
+                <h6><em>$</em>320</h6>
+              </span>
             </div>
             <div class="down-content">
               <span class="author">Sophia Rose</span>
@@ -333,7 +320,9 @@ https://templatemo.com/tm-586-scholar
             <div class="thumb">
               <a href="#"><img src="assets/images/course-06.jpg" alt=""></a>
               <span class="category">Webdesign</span>
-              <span class="price"><h6><em>$</em>240</h6></span>
+              <span class="price">
+                <h6><em>$</em>240</h6>
+              </span>
             </div>
             <div class="down-content">
               <span class="author">David Hutson</span>
@@ -354,7 +343,7 @@ https://templatemo.com/tm-586-scholar
               <div class="col-lg-3 col-md-6">
                 <div class="counter">
                   <h2 class="timer count-title count-number" data-to="150" data-speed="1000"></h2>
-                   <p class="count-text ">Happy Students</p>
+                  <p class="count-text ">Happy Students</p>
                 </div>
               </div>
               <div class="col-lg-3 col-md-6">
@@ -443,7 +432,7 @@ https://templatemo.com/tm-586-scholar
         </div>
       </div>
     </div>
-  </div> 
+  </div>
 
   <div class="section testimonials">
     <div class="container">
@@ -451,7 +440,8 @@ https://templatemo.com/tm-586-scholar
         <div class="col-lg-7">
           <div class="owl-carousel owl-testimonials">
             <div class="item">
-              <p>“Please tell your friends or collegues about TemplateMo website. Anyone can access the website to download free templates. Thank you for visiting.”</p>
+              <p>“Please tell your friends or collegues about TemplateMo website. Anyone can access the website to
+                download free templates. Thank you for visiting.”</p>
               <div class="author">
                 <img src="assets/images/testimonial-author.jpg" alt="">
                 <span class="category">Full Stack Master</span>
@@ -459,7 +449,8 @@ https://templatemo.com/tm-586-scholar
               </div>
             </div>
             <div class="item">
-              <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravid.”</p>
+              <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Quis ipsum suspendisse ultrices gravid.”</p>
               <div class="author">
                 <img src="assets/images/testimonial-author.jpg" alt="">
                 <span class="category">UI Expert</span>
@@ -467,7 +458,8 @@ https://templatemo.com/tm-586-scholar
               </div>
             </div>
             <div class="item">
-              <p>“Scholar is free website template provided by TemplateMo for educational related websites. This CSS layout is based on Bootstrap v5.3.0 framework.”</p>
+              <p>“Scholar is free website template provided by TemplateMo for educational related websites. This CSS
+                layout is based on Bootstrap v5.3.0 framework.”</p>
               <div class="author">
                 <img src="assets/images/testimonial-author.jpg" alt="">
                 <span class="category">Digital Animator</span>
@@ -480,7 +472,8 @@ https://templatemo.com/tm-586-scholar
           <div class="section-heading">
             <h6>TESTIMONIALS</h6>
             <h2>What they say about us?</h2>
-            <p>You can search free CSS templates on Google using different keywords such as templatemo portfolio, templatemo gallery, templatemo blue color, etc.</p>
+            <p>You can search free CSS templates on Google using different keywords such as templatemo portfolio,
+              templatemo gallery, templatemo blue color, etc.</p>
           </div>
         </div>
       </div>
@@ -603,7 +596,8 @@ https://templatemo.com/tm-586-scholar
           <div class="section-heading">
             <h6>Contact Us</h6>
             <h2>Feel free to contact us anytime</h2>
-            <p>Thank you for choosing our templates. We provide you best CSS templates at absolutely 100% free of charge. You may support us by sharing our website to your friends.</p>
+            <p>Thank you for choosing our templates. We provide you best CSS templates at absolutely 100% free of
+              charge. You may support us by sharing our website to your friends.</p>
             <div class="special-offer">
               <span class="offer">off<br><em>50%</em></span>
               <h6>Valide: <em>24 April 2036</em></h6>
@@ -623,7 +617,8 @@ https://templatemo.com/tm-586-scholar
                 </div>
                 <div class="col-lg-12">
                   <fieldset>
-                    <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your E-mail..." required="">
+                    <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your E-mail..."
+                      required="">
                   </fieldset>
                 </div>
                 <div class="col-lg-12">
@@ -644,11 +639,7 @@ https://templatemo.com/tm-586-scholar
     </div>
   </div>
 
-<<<<<<<< HEAD:home2.php
- <?php require_once 'footer.php'; ?>
-========
- <?php require_once 'footer.php' ?>
->>>>>>>> cfbebc664611f00aa41ca11a4e018345b15deef3:index copy.php
+  <?php require_once 'footer.php' ?>
 
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
@@ -659,5 +650,6 @@ https://templatemo.com/tm-586-scholar
   <script src="assets/js/counter.js"></script>
   <script src="assets/js/custom.js"></script>
 
-  </body>
+</body>
+
 </html>
