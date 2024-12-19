@@ -27,6 +27,103 @@ TemplateMo 586 Scholar
 https://templatemo.com/tm-586-scholar
 
 -->
+
+
+  <style>
+    .form-popup-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+    }
+
+    .form-popup-bg {
+      position: fixed;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(94, 110, 141, 0.9);
+      opacity: 0;
+      visibility: hidden;
+      -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+      -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+      transition: opacity 0.3s 0s, visibility 0s 0.3s;
+      overflow-y: auto;
+      z-index: 10000;
+    }
+
+    .form-popup-bg.is-visible {
+      opacity: 1;
+      visibility: visible;
+      -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+      -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+      transition: opacity 0.3s 0s, visibility 0s 0s;
+    }
+
+    .form-container {
+      background-color: rgb(255, 255, 255);
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      padding: 40px;
+      color: #fff;
+    }
+
+    .close-button {
+      background: none;
+      color: #000;
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      border: solid 1px #fff;
+      border-radius:25%;
+    }
+
+    .form-popup-bg:before {
+      content: '';
+      background-color: #fff;
+      opacity: .25;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    @font-face {
+
+font-family: 'unna'; /* Choose a name for your font */
+
+src: url('assets/Unna/Unna-regular.ttf') format('ttf'); /* Path to your font file */
+
+font-weight: normal; /* Optional: Set font weight if needed */
+
+font-style: normal; /* Optional: Set font style if needed */ 
+
+}
+
+body {
+
+font-family: 'unna'; /* Use the new font family, with a fallback if not supported */
+
+}
+  </style>
+
+
 </head>
 
 <body>
@@ -55,9 +152,9 @@ https://templatemo.com/tm-586-scholar
               <div class="row">
                 <div class="col-md-6">
                   <div class="header-text">
-                    <span class="category">Our Courses</span>
+                    <span class="category" id="jobs1">Job Openings</span>
                     <h2 class="w-100">With Scholar Teachers, Everything Is Easier</h2>
-                   
+
                     <div class="buttons">
                       <div class="main-button w-100 text-center mx-5">
                         <a href="#" class="d-block"><i class="fa fa-search"></i> Search for Job Openings !!</a>
@@ -68,7 +165,7 @@ https://templatemo.com/tm-586-scholar
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6 item item-1 m-0"></div>
+                <div class="col-md-6 item item-1 m-0 "></div>
               </div>
             </div>
 
@@ -79,54 +176,6 @@ https://templatemo.com/tm-586-scholar
     </div>
   </div>
 
-  <div class="services section" id="services">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-md-6">
-          <div class="service-item">
-            <div class="icon">
-              <img src="assets/images/service-01.png" alt="online degrees">
-            </div>
-            <div class="main-content">
-              <h4>Online Degrees</h4>
-              <p>Whenever you need free templates in HTML CSS, you just remember TemplateMo website.</p>
-              <div class="main-button">
-                <a href="#">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="service-item">
-            <div class="icon">
-              <img src="assets/images/service-02.png" alt="short courses">
-            </div>
-            <div class="main-content">
-              <h4>Short Courses</h4>
-              <p>You can browse free templates based on different tags such as digital marketing, etc.</p>
-              <div class="main-button">
-                <a href="#">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="service-item">
-            <div class="icon">
-              <img src="assets/images/service-03.png" alt="web experts">
-            </div>
-            <div class="main-content">
-              <h4>Web Experts</h4>
-              <p>You can start learning HTML CSS by modifying free templates from our website too.</p>
-              <div class="main-button">
-                <a href="#">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <div class="section about-us">
     <div class="container">
@@ -212,13 +261,14 @@ https://templatemo.com/tm-586-scholar
     </div>
   </div>
 
+
   <section class="section courses" id="courses">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-lg-12 text-center">
           <div class="section-heading">
-            <h6>Latest Courses</h6>
-            <h2>Latest Courses</h2>
+            <h6>Latest Job Openings</h6>
+            <h2>Latest Job Openings</h2>
           </div>
         </div>
       </div>
@@ -238,23 +288,75 @@ https://templatemo.com/tm-586-scholar
       </ul>
       <div class="row event_box">
         <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
-          <div class="events_item">
-            <div class="thumb  ps-4 pt-3">
-              <h4><b>Job-Title</b></h4>
-              <div><span class="text-secondary text-small">Work Type : <span
-                    class=" text-dark rounded bg-info px-1">Work From Home</span> </span><span
-                  class="text-secondary text-small">Status : <span
-                    class=" text-dark rounded bg-info px-1">Available</span></span></div>
-
+          <div class="events_item job-opening-box">
+            <div class="thumb  ps-3 pe-2 pt-3 h6">
+              <h5 class="mb-1 fw-semibold"><span>Job-Title</span></h5>
+              <div class="mb-1 ">
+                <span class="h6  text-secondary text-small me-2">Work Type : <small
+                    class="p-0 px-1  alert rounded-3 alert-primary me-2"><i class="fa-solid fa-house fa-xs"></i> Work
+                    From Home</small>
+                </span><span class="h6  text-secondary text-small me-2">Status : <small
+                    class="p-0 px-1  alert rounded-3 alert-primary me-2">Available</small></span>
+              </div>
             </div>
-            <div class="down-content pt-2">
-              <div class="author">Basic Requirement : <span>18+ Age, Computer knowledge, Laptop with Good Internet
-                  Connectivity & Good Communication...</span></div>
-              <div class="author">Salary : <span>Earnings from 14k to 17k</span></div>
-              <h4 class="mt-3"><a href="" class="bg-warning rounded px-3">Task Details</a></h4>
+            <hr class="m-1">
+            <div class="down-content pt-2 lh-md">
+              <div class="author overflow-hidden" style="height:50px;"><u>Basic Requirement</u> : <span>18+ Age, Computer knowledge, Laptop with Good
+                  Internet
+                  Connectivity & Good Communication... Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, ipsa!</span></div>
+              <div class="author mb-3"><u>Salary</u> : <span>Earnings from 14k to 17k</span></div>
+              <small class="my-3" id="btnOpenForm"><a href="" style="background:var(--main2);"
+                  class="text-light rounded-4 py-1 px-3"><i class="fa-solid fa-circle-info fa-xs"></i> Task Details</a>
+              </small>
             </div>
           </div>
         </div>
+        <!--  -->
+        <div class="form-popup-bg">
+          <div class="form-container">
+            <button id="btnCloseForm" class="close-button">X</button>
+            <h3>Contact Us</h3>
+            <hr class="text-dark">
+            <div class="bg-light p-3 rounded-3">
+              <div>
+                <strong class="text-dark"><u>Basic Requirement</u> : </strong><span class="text-dark">18+ Age, Computer
+                  knowledge, Laptop with Good Internet Connectivity & Good Communication...</span>
+
+              </div>
+              <div class="mb-1"><span class="text-secondary text-small">Work Type : <span
+                    class=" text-dark p-0 px-2 alert rounded-3 alert-primary">Work From Home</span> </span><span
+                  class="text-secondary text-small">Status : <span
+                    class=" text-dark p-0 px-2 alert rounded-3 alert-primary">Available</span></span></div>
+
+
+              <hr class="text-dark">
+
+              <div>
+                <strong class="text-dark"><u>Scope of Work</u> : </strong><span class="text-dark"> Agents will be shared the
+                  input files of the data details from which they have to copy and paste the data in the appropriate
+                  field
+                  in Flipkart product details link shared. It is a simple copy & paste work. Agent will be provided with
+                  7
+                  days training directly by the company & then the agent can go live.</span>
+                <hr class="text-dark">
+                <strong class="text-dark"><u>Salary</u> : </strong><span class="text-dark">150000$</span>
+              </div>
+            </div>
+            <div class="p-5 text-center">
+              <span class="text-danger">** Kindly read the complete details of the Tasks & eligibility criteria before
+                clicking ‘Apply’.</span>
+
+            </div>
+
+            <div class=" text-center">
+              <button class="rounded-3 p-2 text-white" style="background-color:var(--main2);"><i
+                  class="fa-solid fa-paper-plane"></i> Quick Apply</button>
+            </div>
+          </div>
+        </div>
+
+
+        <!--  -->
         <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6  development">
           <div class="events_item">
             <div class="thumb">
@@ -371,224 +473,6 @@ https://templatemo.com/tm-586-scholar
     </div>
   </div>
 
-  <div class="team section" id="team">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-3 col-md-6">
-          <div class="team-member">
-            <div class="main-content">
-              <img src="assets/images/member-01.jpg" alt="">
-              <span class="category">UX Teacher</span>
-              <h4>Sophia Rose</h4>
-              <ul class="social-icons">
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="team-member">
-            <div class="main-content">
-              <img src="assets/images/member-02.jpg" alt="">
-              <span class="category">Graphic Teacher</span>
-              <h4>Cindy Walker</h4>
-              <ul class="social-icons">
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="team-member">
-            <div class="main-content">
-              <img src="assets/images/member-03.jpg" alt="">
-              <span class="category">Full Stack Master</span>
-              <h4>David Hutson</h4>
-              <ul class="social-icons">
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="team-member">
-            <div class="main-content">
-              <img src="assets/images/member-04.jpg" alt="">
-              <span class="category">Digital Animator</span>
-              <h4>Stella Blair</h4>
-              <ul class="social-icons">
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="section testimonials">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-7">
-          <div class="owl-carousel owl-testimonials">
-            <div class="item">
-              <p>“Please tell your friends or collegues about TemplateMo website. Anyone can access the website to
-                download free templates. Thank you for visiting.”</p>
-              <div class="author">
-                <img src="assets/images/testimonial-author.jpg" alt="">
-                <span class="category">Full Stack Master</span>
-                <h4>Claude David</h4>
-              </div>
-            </div>
-            <div class="item">
-              <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Quis ipsum suspendisse ultrices gravid.”</p>
-              <div class="author">
-                <img src="assets/images/testimonial-author.jpg" alt="">
-                <span class="category">UI Expert</span>
-                <h4>Thomas Jefferson</h4>
-              </div>
-            </div>
-            <div class="item">
-              <p>“Scholar is free website template provided by TemplateMo for educational related websites. This CSS
-                layout is based on Bootstrap v5.3.0 framework.”</p>
-              <div class="author">
-                <img src="assets/images/testimonial-author.jpg" alt="">
-                <span class="category">Digital Animator</span>
-                <h4>Stella Blair</h4>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-5 align-self-center">
-          <div class="section-heading">
-            <h6>TESTIMONIALS</h6>
-            <h2>What they say about us?</h2>
-            <p>You can search free CSS templates on Google using different keywords such as templatemo portfolio,
-              templatemo gallery, templatemo blue color, etc.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="section events" id="events">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <div class="section-heading">
-            <h6>Schedule</h6>
-            <h2>Upcoming Events</h2>
-          </div>
-        </div>
-        <div class="col-lg-12 col-md-6">
-          <div class="item">
-            <div class="row">
-              <div class="col-lg-3">
-                <div class="image">
-                  <img src="assets/images/event-01.jpg" alt="">
-                </div>
-              </div>
-              <div class="col-lg-9">
-                <ul>
-                  <li>
-                    <span class="category">Web Design</span>
-                    <h4>UI Best Practices</h4>
-                  </li>
-                  <li>
-                    <span>Date:</span>
-                    <h6>16 Feb 2036</h6>
-                  </li>
-                  <li>
-                    <span>Duration:</span>
-                    <h6>22 Hours</h6>
-                  </li>
-                  <li>
-                    <span>Price:</span>
-                    <h6>$120</h6>
-                  </li>
-                </ul>
-                <a href="#"><i class="fa fa-angle-right"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-12 col-md-6">
-          <div class="item">
-            <div class="row">
-              <div class="col-lg-3">
-                <div class="image">
-                  <img src="assets/images/event-02.jpg" alt="">
-                </div>
-              </div>
-              <div class="col-lg-9">
-                <ul>
-                  <li>
-                    <span class="category">Front End</span>
-                    <h4>New Design Trend</h4>
-                  </li>
-                  <li>
-                    <span>Date:</span>
-                    <h6>24 Feb 2036</h6>
-                  </li>
-                  <li>
-                    <span>Duration:</span>
-                    <h6>30 Hours</h6>
-                  </li>
-                  <li>
-                    <span>Price:</span>
-                    <h6>$320</h6>
-                  </li>
-                </ul>
-                <a href="#"><i class="fa fa-angle-right"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-12 col-md-6">
-          <div class="item">
-            <div class="row">
-              <div class="col-lg-3">
-                <div class="image">
-                  <img src="assets/images/event-03.jpg" alt="">
-                </div>
-              </div>
-              <div class="col-lg-9">
-                <ul>
-                  <li>
-                    <span class="category">Full Stack</span>
-                    <h4>Web Programming</h4>
-                  </li>
-                  <li>
-                    <span>Date:</span>
-                    <h6>12 Mar 2036</h6>
-                  </li>
-                  <li>
-                    <span>Duration:</span>
-                    <h6>48 Hours</h6>
-                  </li>
-                  <li>
-                    <span>Price:</span>
-                    <h6>$440</h6>
-                  </li>
-                </ul>
-                <a href="#"><i class="fa fa-angle-right"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <div class="contact-us section" id="contact">
     <div class="container">
       <div class="row">
@@ -649,6 +533,35 @@ https://templatemo.com/tm-586-scholar
   <script src="assets/js/owl-carousel.js"></script>
   <script src="assets/js/counter.js"></script>
   <script src="assets/js/custom.js"></script>
+
+
+  <script>
+    function closeForm() {
+      $('.form-popup-bg').removeClass('is-visible');
+    }
+
+    $(document).ready(function ($) {
+
+      /* Contact Form Interactions */
+      $('#btnOpenForm').on('click', function (event) {
+        event.preventDefault();
+
+        $('.form-popup-bg').addClass('is-visible');
+      });
+
+      //close popup when clicking x or off popup
+      $('.form-popup-bg').on('click', function (event) {
+        if ($(event.target).is('.form-popup-bg') || $(event.target).is('#btnCloseForm')) {
+          event.preventDefault();
+          $(this).removeClass('is-visible');
+        }
+      });
+
+
+
+    });
+
+  </script>
 
 </body>
 
