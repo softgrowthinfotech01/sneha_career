@@ -123,9 +123,8 @@ https://templatemo.com/tm-586-scholar
       </div>
     </div>
   </div>
-  
-
- <?php require_once 'footer.php' ?>
+   
+ <?php require_once 'footer.php'; ?>
 
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->

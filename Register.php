@@ -29,10 +29,20 @@ https://templatemo.com/tm-586-scholar
 
 <style>
     body{
-        background: blue;
+        background-color : var(--main);
     }
     .box{
         margin-top:150px;
+    }
+    .fff{
+      margin-top:250px;
+      margin-left:370px;
+      padding-top: 50px;
+      
+      background:;
+    }
+    .footer{
+      background-color : var(--main);
     }
 </style>
   </head>
@@ -57,23 +67,7 @@ https://templatemo.com/tm-586-scholar
   <!-- ***** Header Area End ***** -->
    
 
-  <div class="contact-us section box" id="contact" >
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6  align-self-center">
-          <div class="section-heading">
-            <h6>Contact Us</h6>
-            <h2>Feel free to contact us anytime</h2>
-            <p>Thank you for choosing our templates. We provide you best CSS templates at absolutely 100% free of charge. You may support us by sharing our website to your friends.</p>
-            <div class="special-offer">
-              <span class="offer">off<br><em>50%</em></span>
-              <h6>Valide: <em>24 April 2036</em></h6>
-              <h4>Special Offer <em>50%</em> OFF!</h4>
-              <a href="#"><i class="fa fa-angle-right"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 fff">
           <div class="contact-us-content">
             <form id="contact-form" action="" method="post">
               <div class="row">
@@ -107,16 +101,22 @@ https://templatemo.com/tm-586-scholar
 
 
 
- <?php require_once 'footer.php'; ?>
+ 
+  <?php require_once 'footer.php'; ?>
+ 
 
-  <!-- Scripts -->
+ <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/jquery/jquery.min.js" ></script>
   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
   <script src="assets/js/isotope.min.js"></script>
   <script src="assets/js/owl-carousel.js"></script>
   <script src="assets/js/counter.js"></script>
   <script src="assets/js/custom.js"></script>
+  
 
   </body>
 </html>
+
+
+

@@ -1,3 +1,8 @@
+<?php
+require_once "admin/conn.php";
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -287,10 +292,17 @@ font-family: 'unna'; /* Use the new font family, with a fallback if not supporte
         </li>
       </ul>
       <div class="row event_box">
+      <?php
+            $stmt_job = $conn->prepare("SELECT * FROM job  ORDER BY job_id ASC");
+            $stmt_job->execute();
+            $row_job= $stmt_job-> fetchAll(PDO::FETCH_ASSOC);
+            for($i=0;$i<count($row_job);$i++)
+            {
+            ?>
         <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
           <div class="events_item job-opening-box">
             <div class="thumb  ps-3 pe-2 pt-3 h6">
-              <h5 class="mb-1 fw-semibold"><span>Job-Title</span></h5>
+              <h5 class="mb-1 fw-semibold"><span> <?php echo $row_job[$i]['job_title'];?></span></h5>
               <div class="mb-1 ">
                 <span class="h6  text-secondary text-small me-2">Work Type : <small
                     class="p-0 px-1  alert rounded-3 alert-primary me-2"><i class="fa-solid fa-house fa-xs"></i> Work
@@ -311,6 +323,7 @@ font-family: 'unna'; /* Use the new font family, with a fallback if not supporte
             </div>
           </div>
         </div>
+        <?php } ?>
         <!--  -->
         <div class="form-popup-bg">
           <div class="form-container">
