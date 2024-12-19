@@ -87,7 +87,7 @@ https://templatemo.com/tm-586-scholar
               <div> 
                 <i class="fa fa-phone-square" aria-hidden="true"></i> 7875928565 | 8698568289 | 7588334937 
   </br>
-                <i class="fa fa-home" aria-hidden="true"></i><p>Hanfy Complex, 2nd Floor, Near Ganraj Travel Office, Jatpura Gate, Chandrapur.<p>
+                <i class="fa fa-home" aria-hidden="true"></i>Hanfy Complex, 2nd Floor, Near Ganraj Travel Office, Jatpura Gate, Chandrapur.
                 </div>
             </div>
           </div>
