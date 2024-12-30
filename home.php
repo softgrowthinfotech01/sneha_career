@@ -130,7 +130,7 @@ https://templatemo.com/tm-586-scholar
               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                With over [X] years of experience in the job consulting industry, we have a deep understanding of the challenges that both job seekers and employers face. Our team is dedicated to providing personalized solutions that align with your goals, whether you're a professional seeking your next opportunity or a company looking to hire the best talent.
+                With over 15 years of experience in the job consulting industry, we have a deep understanding of the challenges that both job seekers and employers face. Our team is dedicated to providing personalized solutions that align with your goals, whether you're a professional seeking your next opportunity or a company looking to hire the best talent.
                 </div>
               </div>
             </div>
@@ -144,7 +144,7 @@ https://templatemo.com/tm-586-scholar
               <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                At [Company Name], we take a hands-on approach to ensure every client receives the attention they deserve. We believe in creating lasting relationships by understanding your unique needs and delivering the best possible solutions. Whether you're navigating a career transition or looking to fill key roles in your company, we are here to help every step of the way.
+                At Sneha Career Development, we take a hands-on approach to ensure every client receives the attention they deserve. We believe in creating lasting relationships by understanding your unique needs and delivering the best possible solutions. Whether you're navigating a career transition or looking to fill key roles in your company, we are here to help every step of the way.
                 </div>
               </div>
             </div>
@@ -153,7 +153,7 @@ https://templatemo.com/tm-586-scholar
         <div class="col-lg-5 align-self-center">
           <div class="section-heading">
             <h6>About Us</h6>
-            <h2>What make us the best academy online?</h2>
+            <h2>What make us the best ?</h2>
             <p>Welcome to <b>Sneha careear Development</b>, where your career aspirations meet tailored guidance and expert advice.
 <br>
 At <b>Sneha careear Development</b>, we believe that every individual possesses a unique potential waiting to be unleashed. Our mission is to empower you with the tools, knowledge, and confidence needed to achieve your career goals. Whether you are just starting your professional journey, seeking a career change, or aiming for the next big step in your current path, we are here to support you every step of the way.</p>
