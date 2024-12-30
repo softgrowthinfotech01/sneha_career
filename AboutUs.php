@@ -46,6 +46,7 @@ https://templatemo.com/tm-586-scholar
 <body>
 
   <!-- ***** Preloader Start ***** -->
+  
   <div id="js-preloader" class="js-preloader">
     <div class="preloader-inner">
       <span class="dot"></span>
@@ -67,7 +68,7 @@ https://templatemo.com/tm-586-scholar
       <div class="row ">
         <div class="col-lg-6 offset-lg-1">
           <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
+            <div class="accordion-item header-text">
               <h2 class="accordion-header" id="headingOne">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                   Where shall we begin?
@@ -121,18 +122,15 @@ https://templatemo.com/tm-586-scholar
           <div class="section-heading the">
             <h6>About Us</h6>
             <h2>What make us the best academy online?</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravid risus commodo.</p>
+            <p>At Sneha Career Development, we are dedicated to helping individuals navigate their career journeys and assisting businesses in building exceptional teams. Our team of experienced consultants offers a personalized approach to job consulting, focusing on providing tailored career advice, recruitment services, and expert guidance for both candidates and employers.</p>
             <div class="main-button">
-              <a href="#">Discover More</a>
+              <a href="AboutUs">Discover More</a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-
-
 
  <?php require_once 'footer.php'; ?>
 

@@ -165,12 +165,12 @@ body {
 }
 
 .section-heading h2 em {
-  color: #7a6ad8;
+  color: var(--main2);
   font-style: normal;
 }
 
 .section-heading h6 {
-  color: #7a6ad8;
+  color: var(--main2);
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 600;
@@ -179,7 +179,7 @@ body {
 .main-button a {
   display: inline-block;
   background-color: #fff;
-  color: #7a6ad8;
+  color: var(--main2);
   font-size: 14px;
   font-weight: 500;
   height: 40px;
@@ -190,7 +190,7 @@ body {
 }
 
 .main-button a:hover {
-  background-color: #7a6ad8;
+  background-color: var(--main2);
   color: #fff;
 }
 
@@ -224,6 +224,7 @@ Pre-loader Style
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  /* display: none; */
 }
 
 @-webkit-keyframes dot {
@@ -319,8 +320,8 @@ Header Style
 
 .header-area {
   position: absolute;
-  background-color: transparent;
-  top: 30px;
+  background-color: var(--main);
+  top: 0px;
   left: 0;
   right: 0;
   z-index: 100;
@@ -695,7 +696,7 @@ Banner Style
 
 .main-banner .item-1 {
   background-image: url(../images/banner-item-01.jpg);
-  box-shadow: 5px 4px 8px 3px #fff;
+  box-shadow: -2px -2px 10px 2px #fff;
 }
 
 .main-banner .item-2 {
@@ -751,7 +752,7 @@ Banner Style
 
 .main-banner .item .buttons .main-button a {
   font-size: 14px;
-  color: #7a6ad8;
+  color: var(--main2);
   background-color: #fff;
   display: inline-block;
   height: 50px;
@@ -917,7 +918,7 @@ About Style
 }
 
 .accordion-button:not(.collapsed) {
-  color: #7a6ad8;
+  color: var(--main2);
   background-color: #fff;
 }
 
@@ -977,20 +978,21 @@ Courses Style
 }
 
 .event_filter {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .event_filter {
   background-color: #f1f0fe;
-  border-radius: 50px;
-  padding: 15px 40px;
+  border-radius: 10px;
+  padding: 15px 40px 15px 0px;
   list-style: none;
   margin: 0 auto 70px;
   max-width: max-content;
+  height: 20rem;
 }
 
 .event_filter li {
-  display: inline-block;
+  /* display: inline-block; */
   margin: 0px 20px;
 }
 
@@ -1004,8 +1006,8 @@ Courses Style
 .event_filter li
 
 .event_filter li a.is_active,
-.event_filter li a:hover {
-  color: #7a6ad8;
+.event_filter li a:hover{
+  color: var(--main2) !important;
 }
 
 .events_item .thumb {
@@ -1062,7 +1064,7 @@ Courses Style
 
 .events_item {
   background-color: #ffffff;
-  border-radius: 5px;
+  border-radius: 15px;
   margin-bottom: 30px;
   position: relative;
   justify-content: center;
@@ -1072,7 +1074,7 @@ Courses Style
 } 
 
 .events_item .down-content {
-  padding: 20px 30px 25px 30px;
+  padding: 20px 30px 25px 1rem;
 }
 
 .events_item .down-content span.author {
@@ -1469,7 +1471,7 @@ Contact Style
   margin-top: 50px;
   background-color: #fff;
   border-radius: 25px;
-  padding: 30px 120px;
+  padding: 30px 20px 30px 120px;
   display: inline-block;
   position: relative;
 }
@@ -1480,9 +1482,9 @@ Contact Style
   top: 0;
   background-color: var(--main2);
   width: 80px;
-  padding: 30px 8px;
+  /* padding: 30px 8px; */
   line-height: 25px;
-  height: 120px;
+  height: 100%;
   border-radius: 15px 60px 60px 15px; 
   display: inline-block;
   text-align: center;
@@ -1658,7 +1660,7 @@ Footer Style
 */
 
 footer {
-  margin-top: 150px;
+  margin-top: 50px;
   position: relative;
   background-color: #7a6ad8;
   vertical-align: middle;
@@ -1725,7 +1727,7 @@ body {
     padding: 15px 20px;
   }
   .event_filter li {
-    display: inline-block;
+    /* display: inline-block; */
     margin: 0px 10px;
   }
 }
