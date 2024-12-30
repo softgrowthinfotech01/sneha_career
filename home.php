@@ -183,7 +183,7 @@ https://templatemo.com/tm-586-scholar
               <div class="row">
                 <div class="col-md-6">
                   <div class="header-text">
-                    <span class="category text-black" id="jobs1">Where Employers and Job Seekers Meet.</span>
+                    <span class="category text-white" id="jobs1">Where Employers and Job Seekers Meet.</span>
                     <h2 class="w-100 text-black">Connecting Talent with Opportunity</h2>
 
                     <div class="buttons col-md-12 col-sm-6">
@@ -299,7 +299,11 @@ At <b>Sneha careear Development</b>, we believe that every individual possesses 
         </div>
       </div>
       
+<<<<<<< HEAD
       <div class="row event_box mx-md-5 mx-sm-1" >
+=======
+      <div class="row event_box">
+>>>>>>> d23405e73e5689a956e94608b149836a97262b9a
       <?php
             $stmt_job = $conn->prepare("SELECT * FROM job  ORDER BY job_id ASC");
             $stmt_job->execute();
