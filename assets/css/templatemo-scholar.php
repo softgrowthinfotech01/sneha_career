@@ -165,12 +165,12 @@ body {
 }
 
 .section-heading h2 em {
-  color: var(--main2);
+  color: #7a6ad8;
   font-style: normal;
 }
 
 .section-heading h6 {
-  color: var(--main2);
+  color: #7a6ad8;
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 600;
@@ -179,7 +179,7 @@ body {
 .main-button a {
   display: inline-block;
   background-color: #fff;
-  color: var(--main2);
+  color: #7a6ad8;
   font-size: 14px;
   font-weight: 500;
   height: 40px;
@@ -190,7 +190,7 @@ body {
 }
 
 .main-button a:hover {
-  background-color: var(--main2);
+  background-color: #7a6ad8;
   color: #fff;
 }
 
@@ -224,7 +224,6 @@ Pre-loader Style
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  /* display: none; */
 }
 
 @-webkit-keyframes dot {
@@ -320,7 +319,7 @@ Header Style
 
 .header-area {
   position: absolute;
-  background-color: var(--main);
+  background-color: transparent;
   top: 30px;
   left: 0;
   right: 0;
@@ -691,7 +690,7 @@ Banner Style
   background-repeat: no-repeat;
   background-size: cover;
   padding: 170px 0px 120px 0px;
- 
+  background-color: var(--main);
 }
 
 .main-banner .item-1 {
@@ -752,7 +751,7 @@ Banner Style
 
 .main-banner .item .buttons .main-button a {
   font-size: 14px;
-  color: var(--main2);
+  color: #7a6ad8;
   background-color: #fff;
   display: inline-block;
   height: 50px;
@@ -918,7 +917,7 @@ About Style
 }
 
 .accordion-button:not(.collapsed) {
-  color: var(--main2);
+  color: #7a6ad8;
   background-color: #fff;
 }
 
@@ -978,21 +977,20 @@ Courses Style
 }
 
 .event_filter {
-  /* text-align: center; */
+  text-align: center;
 }
 
 .event_filter {
   background-color: #f1f0fe;
-  border-radius: 10px;
-  padding: 15px 40px 15px 0px;
+  border-radius: 50px;
+  padding: 15px 40px;
   list-style: none;
   margin: 0 auto 70px;
   max-width: max-content;
-  height: 20rem;
 }
 
 .event_filter li {
-  /* display: inline-block; */
+  display: inline-block;
   margin: 0px 20px;
 }
 
@@ -1006,8 +1004,8 @@ Courses Style
 .event_filter li
 
 .event_filter li a.is_active,
-.event_filter li a:hover{
-  color: var(--main2) !important;
+.event_filter li a:hover {
+  color: #7a6ad8;
 }
 
 .events_item .thumb {
@@ -1064,7 +1062,7 @@ Courses Style
 
 .events_item {
   background-color: #ffffff;
-  border-radius: 15px;
+  border-radius: 5px;
   margin-bottom: 30px;
   position: relative;
   justify-content: center;
@@ -1074,7 +1072,7 @@ Courses Style
 } 
 
 .events_item .down-content {
-  padding: 20px 30px 25px 1rem;
+  padding: 20px 30px 25px 30px;
 }
 
 .events_item .down-content span.author {
@@ -1471,7 +1469,7 @@ Contact Style
   margin-top: 50px;
   background-color: #fff;
   border-radius: 25px;
-  padding: 30px 20px 30px 120px;
+  padding: 30px 120px;
   display: inline-block;
   position: relative;
 }
@@ -1482,9 +1480,9 @@ Contact Style
   top: 0;
   background-color: var(--main2);
   width: 80px;
-  /* padding: 30px 8px; */
+  padding: 30px 8px;
   line-height: 25px;
-  height: 100%;
+  height: 120px;
   border-radius: 15px 60px 60px 15px; 
   display: inline-block;
   text-align: center;
@@ -1660,7 +1658,7 @@ Footer Style
 */
 
 footer {
-  margin-top: 50px;
+  margin-top: 150px;
   position: relative;
   background-color: #7a6ad8;
   vertical-align: middle;
@@ -1727,7 +1725,7 @@ body {
     padding: 15px 20px;
   }
   .event_filter li {
-    /* display: inline-block; */
+    display: inline-block;
     margin: 0px 10px;
   }
 }

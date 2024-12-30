@@ -20,6 +20,7 @@ require_once "conn.php";
   <!-- Additional CSS Files -->
   <link rel="stylesheet" href="assets/css/fontawesome.css">
   <link rel="stylesheet" href="assets/css/templatemo-scholar.css">
+  <link rel="stylesheet" href="assets/css/templatemo-scholar.php">
   <link rel="stylesheet" href="assets/css/owl.css">
   <link rel="stylesheet" href="assets/css/animate.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
@@ -33,6 +34,18 @@ https://templatemo.com/tm-586-scholar
 
 
   <style>
+    .main-banner .item-1 {
+  background-image: url(assets/images/job/job.jpg) !important ;
+  box-shadow: 5px 4px 8px 3px #fff;
+}
+.header-area
+{
+  background-color:var(--main) !important;
+}
+.main-banner
+{
+  background-color:white !important;
+}
     .form-popup-bg {
       position: absolute;
       top: 0;
@@ -140,7 +153,7 @@ https://templatemo.com/tm-586-scholar
                 <div class="col-md-6">
                   <div class="header-text">
                     <span class="category" id="jobs1">Job Openings</span>
-                    <h2 class="w-100">With Scholar Teachers, Everything Is Easier</h2>
+                    <h2 class="w-100">Connecting Talent with Opportunity</h2>
 
                     <div class="buttons">
                       <div class="main-button w-100 text-center mx-5">
