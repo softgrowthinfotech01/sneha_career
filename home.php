@@ -59,9 +59,9 @@ https://templatemo.com/tm-586-scholar
           <div class="owl-carousel owl-banner">
             <div class="item pt-2 m-0" style="border-radius:25px 25px 250px 25px;">
               <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 order-sm-first" data-aos="fade-right" data-aos-duration="1000" >
                   <div class="header-text">
-                    <span class="category text-white" id="jobs1">Where Employers and Job Seekers Meet.</span>
+                    <span class="category text-white translate-x-6" id="jobs1">Where Employers and Job Seekers Meet.</span>
                     <h2 class="w-100 text-black">Connecting Talent with Opportunity</h2>
 
                     <div class="buttons col-md-12 col-sm-6">
@@ -74,7 +74,8 @@ https://templatemo.com/tm-586-scholar
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6 item item-1 m-0 "></div>
+                <div data-aos="fade-left" data-aos-easing="easy"
+                data-aos-duration="1000" class="col-md-6 item item-1 m-0 order-sm-last "></div>
               </div>
             </div>
 

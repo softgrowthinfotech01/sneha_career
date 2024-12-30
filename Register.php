@@ -28,6 +28,14 @@ https://templatemo.com/tm-586-scholar
 
 -->
 
+<style>
+  body{
+    background: #D3CCE3 !important;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3) !important;  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E9E4F0, #D3CCE3) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  }
+</style>
 
   </head>
 
@@ -53,7 +61,7 @@ https://templatemo.com/tm-586-scholar
 
 <div class="container-fluid">
         
-        <div class="col-lg-6 fff main2 px-2 py-4 rounded-5 mx-auto contact-us-content">
+        <div class="col-lg-6 fff main2 px-2 py-4 rounded-5 mx-auto mt-0">
         <div class="header-head text-black pb-3"><h2 class="text-white">Register Now !</h2></div>
           <div class="contact-us-content">
             <form id="contact-form" action="" method="post">
