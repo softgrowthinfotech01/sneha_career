@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="assets/css/templatemo-scholar.css">
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 <!--
 
@@ -27,27 +28,10 @@ https://templatemo.com/tm-586-scholar
 
 -->
 
-<style>
-    body{
-        background-color : var(--main);
-    }
-    .box{
-        margin-top:150px;
-    }
-    .fff{
-      margin-top:250px;
-      margin-left:370px;
-      padding-top: 50px;
-      
-      background:;
-    }
-    .footer{
-      background-color : var(--main);
-    }
-</style>
+
   </head>
 
-<body>
+<body class="">
 
   <!-- ***** Preloader Start ***** -->
   <div id="js-preloader" class="js-preloader">
@@ -65,9 +49,12 @@ https://templatemo.com/tm-586-scholar
   <!-- ***** Header Area Start ***** -->
  <?php require_once 'header.php'; ?>
   <!-- ***** Header Area End ***** -->
-   
+  <section class="section courses text-center" id="courses">
 
-        <div class="col-lg-6 fff">
+<div class="container-fluid">
+        
+        <div class="col-lg-6 fff main2 px-2 py-4 rounded-5 mx-auto contact-us-content">
+        <div class="header-head text-black pb-3"><h2 class="text-white">Register Now !</h2></div>
           <div class="contact-us-content">
             <form id="contact-form" action="" method="post">
               <div class="row">
@@ -83,11 +70,21 @@ https://templatemo.com/tm-586-scholar
                 </div>
                 <div class="col-lg-12">
                   <fieldset>
-                    <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                    <input type="text" name="email" id="" pattern="" placeholder="Your Education..." required="">
                   </fieldset>
                 </div>
                 <div class="col-lg-12">
                   <fieldset>
+                    <input type="text" name="email" id="" pattern="" placeholder="Your Mobile Number..." required="">
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset class="text-center">
                     <button type="submit" id="form-submit" class="orange-button">Send Message Now</button>
                   </fieldset>
                 </div>
@@ -95,6 +92,8 @@ https://templatemo.com/tm-586-scholar
             </form>
           </div>
         </div>
+        </div>
+  </section>
       </div>
     </div>
   </div>
