@@ -319,7 +319,7 @@ Header Style
 
 .header-area {
   position: absolute;
-  background-color: var(--main);
+  background-color: transparent;
   top: 30px;
   left: 0;
   right: 0;
@@ -690,7 +690,7 @@ Banner Style
   background-repeat: no-repeat;
   background-size: cover;
   padding: 170px 0px 120px 0px;
- 
+  background-color: var(--main);
 }
 
 .main-banner .item-1 {
