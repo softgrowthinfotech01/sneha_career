@@ -34,34 +34,7 @@ https://templatemo.com/tm-586-scholar
 
 
   <style>
-    @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
-
-/* Cursor */
-.cursor{
-    position: relative;
-    width: 24em;
-    margin: 0 auto;
-    border-right: 2px solid rgba(255,255,255,.75);
-    font-size: 30px;
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    transform: translateY(-50%);    
-}
-/* Animation */
-.typewriter-animation {
-  animation: 
-    typewriter 5s steps(50) 1s 1 normal both, 
-    blinkingCursor 500ms steps(50) infinite normal;
-}
-@keyframes typewriter {
-  from { width: 0; }
-  to { width: 100%; }
-}
-@keyframes blinkingCursor{
-  from { border-right-color: rgba(255,255,255,.75); }
-  to { border-right-color: transparent; }
-}
+   
 
 
     .main-banner .item-1 {
@@ -74,7 +47,7 @@ https://templatemo.com/tm-586-scholar
   background-color:var(--main) !important;
 }
 .main-banner
-{
+{border-color:var(--main) !important;
   background-color:white !important;
 }
     .form-popup-bg {
@@ -174,7 +147,7 @@ https://templatemo.com/tm-586-scholar
 
   <?php require_once 'header.php'; ?>
 
-  <div class="main-banner pb-0 border-bottom border-2 border-dark" style="border-radius:0 0 200px 0;" id="top">
+  <div class="main-banner pb-0 border-bottom border-3 " style="border-radius:0 0 200px 0;" id="top">
     <div class="container-fluid border-1">
       <div class="row">
         <div class="col-lg-12">
@@ -299,11 +272,7 @@ At <b>Sneha careear Development</b>, we believe that every individual possesses 
         </div>
       </div>
       
-<<<<<<< HEAD
       <div class="row event_box mx-md-5 mx-sm-1" >
-=======
-      <div class="row event_box">
->>>>>>> d23405e73e5689a956e94608b149836a97262b9a
       <?php
             $stmt_job = $conn->prepare("SELECT * FROM job  ORDER BY job_id ASC");
             $stmt_job->execute();
