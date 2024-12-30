@@ -1,10 +1,14 @@
    
 
-
+  .main-banner .item-1 {
+    background-image: url(../images/job/job.jpg) !important ;
+    box-shadow: 5px 4px 8px 3px #fff;
+  }
    .header-area
    {top:0px !important ;
      padding-top:10px; 
-     /* background-color:var(--main) !important; */background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+     /* background-color:var(--main) !important; */
+     background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
      color:black !important;
      font-size:16px;
    }
