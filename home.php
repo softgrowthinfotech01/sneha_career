@@ -34,12 +34,43 @@ https://templatemo.com/tm-586-scholar
 
 
   <style>
+    @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+/* Cursor */
+.cursor{
+    position: relative;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 30px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+/* Animation */
+.typewriter-animation {
+  animation: 
+    typewriter 5s steps(50) 1s 1 normal both, 
+    blinkingCursor 500ms steps(50) infinite normal;
+}
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+@keyframes blinkingCursor{
+  from { border-right-color: rgba(255,255,255,.75); }
+  to { border-right-color: transparent; }
+}
+
+
     .main-banner .item-1 {
   background-image: url(assets/images/job/job.jpg) !important ;
   box-shadow: 5px 4px 8px 3px #fff;
 }
 .header-area
-{
+{top:0px !important ;
+  padding-top:10px; 
   background-color:var(--main) !important;
 }
 .main-banner
@@ -160,7 +191,7 @@ font-family: 'unna'; /* Use the new font family, with a fallback if not supporte
   <?php require_once 'header.php'; ?>
 
   <div class="main-banner pb-0" style="border-radius:0 0 200px 0;" id="top">
-    <div class="container-fluid ">
+    <div class="container-fluid border-1">
       <div class="row">
         <div class="col-lg-12">
           <div class="owl-carousel owl-banner">
@@ -168,12 +199,12 @@ font-family: 'unna'; /* Use the new font family, with a fallback if not supporte
               <div class="row">
                 <div class="col-md-6">
                   <div class="header-text">
-                    <span class="category" id="jobs1">Job Openings</span>
-                    <h2 class="w-100">Connecting Talent with Opportunity</h2>
+                    <span class="category text-black" id="jobs1">Where Employers and Job Seekers Meet.</span>
+                    <h2 class="w-100 text-black">Connecting Talent with Opportunity</h2>
 
-                    <div class="buttons">
+                    <div class="buttons col-md-12 col-sm-6">
                       <div class="main-button w-100 text-center mx-5">
-                        <a href="#" class="d-block"><i class="fa fa-search"></i> Search for Job Openings !!</a>
+                        <a href="#" class="d-block bg-dark  text-white"><i class="fa fa-search"></i> Search for Job Openings !!</a>
                       </div>
                       <!-- <div class="icon-button">
                         <a href="#"><i class="fa fa-search"></i>Search for Job Openings !!</a>
