@@ -51,7 +51,7 @@ font-family: 'unna'; /* Use the new font family, with a fallback if not supporte
                       <li class="scroll-to-section"><a href="#courses">FAQ</a></li>
                       <li class="scroll-to-section"><a href="job-openings">Job Openings</a></li>
                       <li class="scroll-to-section"><a <?php if($path=='contact'){echo "class='active'";} ?> href="contact">Contact Us</a></li>
-                      <li class="scroll-to-section"><a href="#contact">Register Now!</a></li>
+                      <li class="scroll-to-section"><a href="register">Register Now!</a></li>
                   </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>

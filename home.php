@@ -174,7 +174,7 @@ https://templatemo.com/tm-586-scholar
 
   <?php require_once 'header.php'; ?>
 
-  <div class="main-banner pb-0" style="border-radius:0 0 200px 0;" id="top">
+  <div class="main-banner pb-0 border-bottom border-2 border-dark" style="border-radius:0 0 200px 0;" id="top">
     <div class="container-fluid border-1">
       <div class="row">
         <div class="col-lg-12">
@@ -279,7 +279,7 @@ https://templatemo.com/tm-586-scholar
 <br>
 At <b>Sneha careear Development</b>, we believe that every individual possesses a unique potential waiting to be unleashed. Our mission is to empower you with the tools, knowledge, and confidence needed to achieve your career goals. Whether you are just starting your professional journey, seeking a career change, or aiming for the next big step in your current path, we are here to support you every step of the way.</p>
             <div class="main-button">
-              <a href="#">Discover More</a>
+              <a href="AboutUs">Discover More</a>
             </div>
           </div>
         </div>
@@ -298,21 +298,8 @@ At <b>Sneha careear Development</b>, we believe that every individual possesses 
           </div>
         </div>
       </div>
-      <ul class="event_filter">
-        <li>
-          <a class="is_active" href="#!" data-filter="*">Show All</a>
-        </li>
-        <li>
-          <a href="#!" data-filter=".design">Webdesign</a>
-        </li>
-        <li>
-          <a href="#!" data-filter=".development">Development</a>
-        </li>
-        <li>
-          <a href="#!" data-filter=".wordpress">Wordpress</a>
-        </li>
-      </ul>
-      <div class="row event_box">
+      
+      <div class="row event_box mx-md-5 mx-sm-1" >
       <?php
             $stmt_job = $conn->prepare("SELECT * FROM job  ORDER BY job_id ASC");
             $stmt_job->execute();
@@ -361,7 +348,7 @@ At <b>Sneha careear Development</b>, we believe that every individual possesses 
             <div class="down-content pt-2 lh-md">
               <div class="author overflow-hidden" style="height:50px;"><u>Basic Requirement</u> : <span><?php echo $row_job[$i]['job_description'];?></span></div>
               <div class="author mb-3"><u>Salary</u> : <span><?php echo $row_job[$i]['salary'];?></span></div>
-              <small class="my-3" id="btnOpenForm<?php echo $row_job[$i]['job_id']; ?>"><a href="home.php?job_id=<?php echo $row_job[$i]['job_id']; ?>" data-id="<?php echo $row_job[$i]['job_id']; ?>" style="background:var(--main2);"
+              <small class="my-3" id="btnOpenForm<?php echo $row_job[$i]['job_id']; ?>"><a href=" " data-id="" style="background:var(--main2);"
                   class="text-light rounded-4 py-1 px-3"><i class="fa-solid fa-circle-info fa-xs"></i> Task Details</a>
               </small>
             </div>
@@ -371,27 +358,7 @@ At <b>Sneha careear Development</b>, we believe that every individual possesses 
         <?php
             }
         ?>
-          <?php
-            // $stmt_job = $conn->prepare("SELECT * FROM job  ORDER BY job_id ASC");
-            // $stmt_job->execute();
-            // $row_job= $stmt_job-> fetchAll(PDO::FETCH_ASSOC);
-            // for($i=0;$i<count($row_job);$i++)
-            // {
-            ?>
-        <!--  -->
-
-        <?php
-if(isset($_GET['id']))
-{
-    $job_id=$_GET['job_id'];
-    $stmt_select =$conn_c->prepare("SELECT * FROM job WHERE job_id=$job_id");
-    $stmt_select->execute();
-    $row_select=$stmt_select->fetchAll(PDO::FETCH_ASSOC);
-    for($i=0;$i<count($row_select);$i++)
-    {
-    
-
-        ?>
+        
         <div class="form-popup-bg">
           <div class="form-container">
             <button id="btnCloseForm" class="close-button">X</button>
@@ -419,7 +386,9 @@ if(isset($_GET['id']))
                   7
                   days training directly by the company & then the agent can go live.</span>
                 <hr class="text-dark">
-                <strong class="text-dark"><u>Salary</u> : </strong><span class="text-dark job_salary"><?php echo $row_job[$i]['salary'];?></span>
+                <strong class="text-dark"><u>Salary</u> : </strong><span class="text-dark job_salary"> 
+                  ₹ 10,000 - ₹ 15,000
+                </span>
               </div>
             </div>
             <div class="p-5 text-center">
@@ -435,10 +404,6 @@ if(isset($_GET['id']))
           </div>
         </div>
 
-       <?php
-}
-}
-?>
         <!--  -->
        
       </div>
