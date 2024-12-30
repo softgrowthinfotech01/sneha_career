@@ -2,7 +2,7 @@
 
   .main-banner .item-1 {
     background-image: url(../images/job/job.jpg) !important ;
-    box-shadow: -4px -3px 10px 5px #f29595;
+    box-shadow: 5px 4px 8px 3px #fff;
   }
    .header-area
    {top:0px !important ;
@@ -98,4 +98,13 @@
             .header-area {
               height:6rem !important;
             }
+            .item-1
+            {
+              order:1;
+            }
+          }
+          .event_filter 
+          {
+            text-align: inherit !important;
+  padding-left: 0px !important;
           }

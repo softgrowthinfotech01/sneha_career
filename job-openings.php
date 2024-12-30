@@ -32,7 +32,13 @@ TemplateMo 586 Scholar
 https://templatemo.com/tm-586-scholar
 
 -->
-
+<style>
+  .event_filter 
+          {
+            text-align: inherit !important;
+  padding-left: 0px !important;
+          }
+  </style>
 </head>
 
 <body>

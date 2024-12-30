@@ -52,14 +52,14 @@ https://templatemo.com/tm-586-scholar
 
   <?php require_once 'header.php'; ?>
 
-  <div class="main-banner pb-0 border-bottom border-3 " style="border-radius:0 0 200px 0;" id="top">
+  <div class="main-banner pb-0 border-bottom border-3 " style="border-radius:0 0 200px 0;flex-flow: column;" id="top">
     <div class="container-fluid border-1">
       <div class="row">
         <div class="col-lg-12">
           <div class="owl-carousel owl-banner">
             <div class="item pt-2 m-0" style="border-radius:25px 25px 250px 25px;">
               <div class="row">
-                <div class="col-md-6 order-sm-first" data-aos="fade-right" data-aos-duration="1000" >
+                <div class="col-md-6 " data-aos="fade-right" data-aos-duration="1000" >
                   <div class="header-text">
                     <span class="category text-white translate-x-6" id="jobs1">Where Employers and Job Seekers Meet.</span>
                     <h2 class="w-100 text-black">Connecting Talent with Opportunity</h2>
@@ -75,7 +75,7 @@ https://templatemo.com/tm-586-scholar
                   </div>
                 </div>
                 <div data-aos="fade-left" data-aos-easing="easy"
-                data-aos-duration="1000" class="col-md-6 item item-1 m-0 order-sm-last "></div>
+                data-aos-duration="1000" class="col-md-6 item item-1 m-0  "></div>
               </div>
             </div>
 
