@@ -78,11 +78,11 @@ https://templatemo.com/tm-586-scholar
     <div class="container" >
       <div class="row">
         <div class="col-lg-6  align-self-center">
-          <div class="section-heading" >
+          <div class="section-heading " >
             <h6>Contact Us</h6>
             <h2>Feel free to contact us anytime</h2>
             
-            <div class="special-offer ">
+            <div class="special-offer header-text">
               <span class="offer"></span>
               <div> 
                 <i class="fa fa-phone-square" aria-hidden="true"></i> 7875928565 | 8698568289 | 7588334937 

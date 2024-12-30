@@ -3,8 +3,6 @@ DirectoryIndex home.php
 
 ErrorDocument 404 /404.php
 
-
-
 RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.php -f

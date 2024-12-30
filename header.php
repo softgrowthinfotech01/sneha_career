@@ -6,6 +6,23 @@ $path=end($path);
 // echo print_r($path);
 
 ?>
+<style>  @font-face {
+
+font-family: 'unna'; /* Choose a name for your font */
+
+src: url('assets/Unna/Unna-regular.ttf') format('ttf'); /* Path to your font file */
+
+font-weight: normal; /* Optional: Set font weight if needed */
+
+font-style: normal; /* Optional: Set font style if needed */ 
+
+}
+
+body {
+
+font-family: 'unna'; /* Use the new font family, with a fallback if not supported */
+
+}</style>
   <!-- ***** Header Area Start ***** -->
   <header class="header-area header-sticky">
     <div class="container">
@@ -29,11 +46,11 @@ $path=end($path);
                     <!-- ***** Serach Start ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                      <li class="scroll-to-section"><a <?php if($path == 'home.php') {echo "class='active'";} ?> href="home.php">Home</a></li>
-                      <li class="scroll-to-section"><a <?php if($path=='about.php') {echo "class='active'";} ?> href="#services">About</a></li>
+                      <li class="scroll-to-section"><a <?php if($path == 'home') {echo "class='active'";} ?> href="home">Home</a></li>
+                      <li class="scroll-to-section"><a <?php if($path=='AboutUs') {echo "class='active'";} ?> href="AboutUs">About</a></li>
                       <li class="scroll-to-section"><a href="#courses">FAQ</a></li>
-                      <li class="scroll-to-section"><a href="#events">Job Openings</a></li>
-                      <li class="scroll-to-section"><a <?php if($path=='contact.php'){echo "class='active'";} ?> href="contact.php">Contact Us</a></li>
+                      <li class="scroll-to-section"><a href="job-openings">Job Openings</a></li>
+                      <li class="scroll-to-section"><a <?php if($path=='contact'){echo "class='active'";} ?> href="contact">Contact Us</a></li>
                       <li class="scroll-to-section"><a href="#contact">Register Now!</a></li>
                   </ul>   
                     <a class='menu-trigger'>
