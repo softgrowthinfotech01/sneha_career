@@ -44,11 +44,14 @@ https://templatemo.com/tm-586-scholar
 .header-area
 {top:0px !important ;
   padding-top:10px; 
-  background-color:var(--main) !important;
+  /* background-color:var(--main) !important; */background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+  color:black !important;
+  font-size:16px;
 }
 .main-banner
 {border-color:var(--main) !important;
-  background-color:white !important;
+  /* background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%) !important; */
+  background-image: linear-gradient(-20deg, #f794a4 0%, #fdd6bd 100%);
 }
     .form-popup-bg {
       position: absolute;
@@ -160,7 +163,7 @@ https://templatemo.com/tm-586-scholar
                     <h2 class="w-100 text-black">Connecting Talent with Opportunity</h2>
 
                     <div class="buttons col-md-12 col-sm-6">
-                      <div class="main-button w-100 text-center mx-5">
+                      <div class="main-button w-100 text-center">
                         <a href="#" class="d-block bg-dark  text-white"><i class="fa fa-search"></i> Search for Job Openings !!</a>
                       </div>
                       <!-- <div class="icon-button">
@@ -391,19 +394,19 @@ At <b>Sneha careear Development</b>, we believe that every individual possesses 
             <div class="row">
               <div class="col-lg-3 col-md-6">
                 <div class="counter">
-                  <h2 class="timer count-title count-number" data-to="150" data-speed="1000"></h2>
+                  <h2 class="timer count-title count-number" data-to="550" data-speed="1000"></h2>
                   <p class="count-text ">Happy Students</p>
                 </div>
               </div>
               <div class="col-lg-3 col-md-6">
                 <div class="counter">
-                  <h2 class="timer count-title count-number" data-to="804" data-speed="1000"></h2>
+                  <h2 class="timer count-title count-number" data-to="1804" data-speed="1000"></h2>
                   <p class="count-text ">Course Hours</p>
                 </div>
               </div>
               <div class="col-lg-3 col-md-6">
                 <div class="counter">
-                  <h2 class="timer count-title count-number" data-to="50" data-speed="1000"></h2>
+                  <h2 class="timer count-title count-number" data-to="450" data-speed="1000"></h2>
                   <p class="count-text ">Employed Students</p>
                 </div>
               </div>
@@ -427,12 +430,12 @@ At <b>Sneha careear Development</b>, we believe that every individual possesses 
           <div class="section-heading">
             <h6>Contact Us</h6>
             <h2>Feel free to contact us anytime</h2>
-            <p>Thank you for choosing our templates. We provide you best CSS templates at absolutely 100% free of
-              charge. You may support us by sharing our website to your friends.</p>
+            <p>We’re here to help you take the next step in your career or find the perfect addition to your team. Reach out to us with any questions, inquiries, or to get started with our services.</p>
             <div class="special-offer">
-              <span class="offer">off<br><em>50%</em></span>
-              <h6>Valide: <em>24 April 2036</em></h6>
-              <h4>Special Offer <em>50%</em> OFF!</h4>
+              <!-- <span class="offer">off<br><em>50%</em></span> -->
+              <span class="offer"></span>
+              <h6>Stay updated with the latest job openings</h6>
+              <!-- <h4>Special Offer <em>50%</em> OFF!</h4> -->
               <a href="#"><i class="fa fa-angle-right"></i></a>
             </div>
           </div>

@@ -40,7 +40,7 @@ font-family: 'unna'; /* Use the new font family, with a fallback if not supporte
                       <a href="home.php" class="logo">
                         
                         
-                        <h2 class="text-white text-normal"><img src="assets/images/sneha-logo-2.png" style="width:50px;" alt="image-logo" class=" d-inline">Sneha <br> <h6 class="h-6 text-white">career Development</h6></h2>
+                        <h2 class="text-white text-normal"><img src="assets/images/sneha-logo-2.png" style="width:50px;" alt="image-logo" class=" d-inline">Sneha <br> <h6 class="h-6 text-white">Career Development</h6></h2>
                     </a>
                     </div>
                     <!-- ***** Serach Start ***** -->
