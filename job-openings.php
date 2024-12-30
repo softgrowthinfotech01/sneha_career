@@ -33,9 +33,94 @@ https://templatemo.com/tm-586-scholar
 -->
 
   <style>
-    body {
-      background: blue;
+   
+    .main-banner .item-1 {
+  background-image: url(assets/images/job/job.jpg) !important ;
+  box-shadow: 5px 4px 8px 3px #fff;
+}
+.header-area
+{
+  background-color:var(--main) !important;
+}
+.main-banner
+{
+  background-color:white !important;
+}
+    .form-popup-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
     }
+
+    .form-popup-bg {
+      position: fixed;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(94, 110, 141, 0.9);
+      opacity: 0;
+      visibility: hidden;
+      -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+      -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+      transition: opacity 0.3s 0s, visibility 0s 0.3s;
+      overflow-y: auto;
+      z-index: 10000;
+    }
+
+    .form-popup-bg.is-visible {
+      opacity: 1;
+      visibility: visible;
+      -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+      -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+      transition: opacity 0.3s 0s, visibility 0s 0s;
+    }
+
+    .form-container {
+      background-color: rgb(255, 255, 255);
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      padding: 40px;
+      color: #fff;
+    }
+
+    .close-button {
+      background: none;
+      color: #000;
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      border: solid 1px #fff;
+      border-radius:25%;
+    }
+
+    .form-popup-bg:before {
+      content: '';
+      background-color: #fff;
+      opacity: .25;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+  
   </style>
 </head>
 
@@ -165,9 +250,9 @@ https://templatemo.com/tm-586-scholar
                   <div class="author mb-3"><b>Salary</b> : <span>
                       <?php echo $row_job[$i]['salary'];?>
                     </span></div>
-                  <small class="my-3" id="btnOpenForm<?php echo $row_job[$i]['job_id']; ?>"><a
-                      href="home.php?job_id=<?php echo $row_job[$i]['job_id']; ?>"
-                      data-id="<?php echo $row_job[$i]['job_id']; ?>" style="background:var(--main2);"
+                  <small class="my-3" id="btnOpenForm2"><a
+                      href=""
+                      data-id="" style="background:var(--main2);"
                       class="text-light rounded-4 py-1 px-3"><i class="fa-solid fa-circle-info fa-xs"></i> Task
                       Details</a>
                   </small>
@@ -178,27 +263,7 @@ https://templatemo.com/tm-586-scholar
             <?php
             }
         ?>
-            <?php
-            // $stmt_job = $conn->prepare("SELECT * FROM job  ORDER BY job_id ASC");
-            // $stmt_job->execute();
-            // $row_job= $stmt_job-> fetchAll(PDO::FETCH_ASSOC);
-            // for($i=0;$i<count($row_job);$i++)
-            // {
-            ?>
-            <!--  -->
-
-            <?php
-if(isset($_GET['id']))
-{
-    $job_id=$_GET['job_id'];
-    $stmt_select =$conn_c->prepare("SELECT * FROM job WHERE job_id=$job_id");
-    $stmt_select->execute();
-    $row_select=$stmt_select->fetchAll(PDO::FETCH_ASSOC);
-    for($i=0;$i<count($row_select);$i++)
-    {
-    
-
-        ?>
+          
             <div class="form-popup-bg">
               <div class="form-container">
                 <button id="btnCloseForm" class="close-button">X</button>
@@ -231,7 +296,7 @@ if(isset($_GET['id']))
                       days training directly by the company & then the agent can go live.</span>
                     <hr class="text-dark">
                     <strong class="text-dark"><u>Salary</u> : </strong><span class="text-dark job_salary">
-                      <?php echo $row_job[$i]['salary'];?>
+                      ₹ 10,000 - ₹ 20,000 per month
                     </span>
                   </div>
                 </div>
@@ -249,10 +314,7 @@ if(isset($_GET['id']))
               </div>
             </div>
 
-            <?php
-}
-}
-?>
+ 
             <!--  -->
 
           </div>
