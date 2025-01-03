@@ -17,6 +17,11 @@ font-weight: normal; /* Optional: Set font weight if needed */
 font-style: normal; /* Optional: Set font style if needed */ 
 
 }
+.header-area
+{
+  background-color:#000 !important;
+  background-image: none;
+}
 
 body {
 
@@ -24,7 +29,7 @@ font-family: 'unna'; /* Use the new font family, with a fallback if not supporte
 
 }</style>
   <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky">
+  <header class="header-area header-sticky bg-black">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -45,13 +50,13 @@ font-family: 'unna'; /* Use the new font family, with a fallback if not supporte
                     </div>
                     <!-- ***** Serach Start ***** -->
                     <!-- ***** Menu Start ***** -->
-                    <ul class="nav">
+                    <ul class="nav pt-2">
                       <li class="scroll-to-section"><a <?php if($path == 'home') {echo "class='active'";} ?> href="home">Home</a></li>
                       <li class="scroll-to-section"><a <?php if($path=='AboutUs') {echo "class='active'";} ?> href="AboutUs">About</a></li>
                       <li class="scroll-to-section"><a href="#courses">FAQ</a></li>
                       <li class="scroll-to-section"><a href="job-openings">Job Openings</a></li>
                       <li class="scroll-to-section"><a <?php if($path=='contact'){echo "class='active'";} ?> href="contact">Contact Us</a></li>
-                      <li class="scroll-to-section"><a href="register">Register Now!</a></li>
+                      <li class="scroll-to-section btn btn-info pt-0"><a href="register">Register Now!</a></li>
                   </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>

@@ -7,7 +7,8 @@
        padding-right:400px;
     }
    .footer{
-    background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+    background: #000;
+    color:#fff;
     padding-bottom:10px;
    }
 </style>

@@ -32,6 +32,12 @@ TemplateMo 586 Scholar
 https://templatemo.com/tm-586-scholar
 
 -->
+<style>
+  .contact-us .special-offer   
+{
+  padding:51px 83px 31px 82px !important;
+}
+  </style>
 
 </head>
 
